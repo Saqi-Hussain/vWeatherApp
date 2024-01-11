@@ -21,10 +21,14 @@
             @keypress.enter="searchForSpecificPlace"
             v-model="state.searchedCountry"
           />
-
-          <div class="bg-red-600 text-center w-36 mx-auto">
-            {{ state.errorMsgToUser }}
-          </div>
+          <transition name="fade">
+            <div
+              v-if="state.errorMsgToUser != ''"
+              class="bg-red-600 text-center w-56 absolute mt-7 ml-11 text-lg font-bold"
+            >
+              {{ state.errorMsgToUser }}
+            </div>
+          </transition>
         </div>
         <div class="flex space-x-2">
           <div
@@ -412,5 +416,30 @@ onMounted(async () => {
   color: #333; /* Adjust color as needed */
   padding: 10px;
   font-weight: bold;
+}
+.fade-enter-from {
+  opacity: 0;
+  transform: translateY(-68px);
+}
+
+.fade-enter-to {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-enter-active {
+  transition: all 2s ease;
+}
+
+.fade-leave-from {
+  opacity: 1;
+  transform: translateY(0);
+}
+.fade-leave-to {
+  opacity: 0;
+  transform: translateY(-60px);
+}
+.fade-leave-active {
+  transition: all 0.3s ease;
 }
 </style>
