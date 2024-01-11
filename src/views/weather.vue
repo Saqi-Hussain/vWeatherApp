@@ -74,7 +74,7 @@
               Today there is {{ state.currentDescription }} all around
             </div>
           </div>
-          <div class="lower grid grid-cols-2 gap-4 p-2">
+          <div class="lower grid grid-cols-2 gap-4 p-2 border w-[18rem]">
             <div
               class="p-2 flex flex-col bg-yellow-900 bg-opacity-50 rounded-xl"
             >
