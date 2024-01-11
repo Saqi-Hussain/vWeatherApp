@@ -6,7 +6,7 @@
   >
     <!-- inner div as a main container of weather app -->
     <div
-      class="h-[92vh] w-[50rem] overflow-hidden rounded-xl flex gap-4 justify-center mx-auto bg-yellow-900 bg-opacity-50 py-3"
+      class="h-auto w-[50rem] overflow-hidden rounded-xl flex gap-4 justify-center mx-auto bg-yellow-900 bg-opacity-50 py-3"
       v-if="state.loading == false"
     >
       <div
