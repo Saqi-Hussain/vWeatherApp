@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: radial-gradient(ellipse at bottom, var(--tw-gradient-stops));
+  background-color: #ffad00; /* Amber 900 */
+  background: linear-gradient(
+    to bottom,
+    #ffad00,
+    #ffeb3b
+  ); /* From Amber 900 to Yellow 300 */
+}
