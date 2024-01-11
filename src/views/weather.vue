@@ -130,7 +130,7 @@
         </div>
       </div>
       <div
-        class="rightContainer w-[55%] rounded-xl flex flex-col p-2 justify-center items-center space-y-2 overflow-hidden"
+        class="rightContainer w-[18rem] md:w-[30rem] lg:w-[55%] rounded-xl flex flex-col p-2 justify-center items-center space-y-2 overflow-hidden"
       >
         <div
           class="flex flex-col w-full rounded-xl gap-2 p-2 bg-amber-900 bg-opacity-70"
