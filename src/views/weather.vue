@@ -1,16 +1,14 @@
 <template>
   <!-- main div for background png  -->
 
-  <div
-    class="h-screen w-[100%] bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-amber-900 to-yellow-300 pt-5 text-white"
-  >
+  <div class="lg:py-5 text-white">
     <!-- inner div as a main container of weather app -->
     <div
-      class="h-auto w-[50rem] overflow-hidden rounded-xl flex gap-4 justify-center mx-auto bg-yellow-900 bg-opacity-50 py-3"
+      class="w-[30rem] lg:w-[50rem] overflow-hidden rounded-xl flex flex-col lg:flex-row flex-wrap gap-4 items-center lg:justify-center mx-auto lg:bg-yellow-900 lg:bg-opacity-50 lg:py-3 bg-black bg-opacity-45"
       v-if="state.loading == false"
     >
       <div
-        class="leftContainer w-[40%] rounded-xl overflow-hidden flex flex-col justify-center items-center p-2 space-y-2 bg-gradient-to-r via-yellow-600 to-yellow-900 pt-5"
+        class="leftContainer lg:w-[40%] rounded-xl overflow-hidden flex flex-col justify-center items-center p-2 space-y-2 bg-gradient-to-r via-yellow-600 to-yellow-900 pt-5"
       >
         <div class="w-full flex flex-col gap-5">
           <input
