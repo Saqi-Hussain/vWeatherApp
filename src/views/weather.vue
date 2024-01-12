@@ -453,7 +453,7 @@ onMounted(async () => {
   opacity: 1;
 }
 .mainFade-enter-active {
-  transition: all 0.3s ease;
+  transition: all 1.3s ease;
 }
 .mainFade-leave-from {
   opacity: 1;
