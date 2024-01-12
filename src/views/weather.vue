@@ -6,7 +6,7 @@
 
     <transition name="mainFade">
       <div
-        class="w-[20rem] md:w-[35rem] lg:w-[50rem] overflow-hidden rounded-xl flex flex-col lg:flex-row flex-wrap gap-4 items-center lg:justify-center mx-auto lg:bg-yellow-900 lg:bg-opacity-50 lg:py-3 bg-black bg-opacity-45 py-2"
+        class="w-[20rem] md:w-[35rem] lg:w-[50rem] overflow-hidden rounded-xl flex flex-col lg:flex-row flex-wrap gap-4 items-center lg:justify-center mx-auto lg:bg-yellow-900 lg:bg-opacity-50 lg:py-3 bg-black bg-opacity-45 py-2 mt-[30rem] lg:mt-0"
         v-if="state.loading == false"
       >
         <div
